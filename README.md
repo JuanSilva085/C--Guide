@@ -30,7 +30,7 @@ Ao recarregar a página, o tema anterior é restaurado.
 
 Clone o repositório:
 
-git clone [https://github.com/JuanSilva085/Csharp-Guide.](https://github.com/JuanSilva085/Csharp-Guide)git
+git clone [https://github.com/JuanSilva085/Csharp-Guide.](https://github.com/JuanSilva085/Csharp-Guide)
 
 Abra o index.html no navegador
 

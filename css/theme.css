@@ -1,0 +1,81 @@
+.light-theme {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.light-theme header {
+  background-color: #9039d0;
+  color: #fff;
+}
+
+.light-theme .section-title {
+  color: #333;
+  border-bottom-color: #9039d0;
+}
+
+.light-theme .code-item {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.light-theme .code-header {
+  background-color: #e6e6e6;
+  color: #333;
+}
+
+.light-theme pre {
+  background-color: #f8f8f8;
+}
+
+.light-theme code {
+  color: #333;
+}
+
+
+/* Sintaxe Colors */
+.light-theme .comment {
+  color: #008000;
+}
+
+.light-theme .keyword {
+  color: #0000ff;
+}
+
+.light-theme .string {
+  color: #a31515;
+}
+
+.light-theme .type {
+  color: #2b91af;
+}
+
+.light-theme .number {
+  color: #09885a;
+}
+
+
+/* Change Theme */
+#change-theme {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+#change-theme:hover {
+  background-color: #555;
+}
+
+.light-theme #change-theme {
+  background-color: #68249c;
+}
+
+.light-theme #change-theme:hover {
+  background-color: #68249c;
+}

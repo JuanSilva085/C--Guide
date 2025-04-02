@@ -39,3 +39,11 @@
   font-size: 0.95rem;
   border-top: 1px solid #eee;
 }
+
+/* Codes Colors */
+    .comment {color:#099109;}
+    .keyword {color:#2b91af;}
+    .type {color:#5bc79f; }
+    .string {color:#f78c6c;}
+    .number {color:#a5b07a;}
+    .var {color: #2b91af}

@@ -13,6 +13,7 @@
         <header>
             <h1>Guia de Bolso - C#</h1>
             <p class="subtitle">Referência rápida com exemplos de código para te ajudar</p>
+            <button id="change-theme">Alternar Tema</button>
         </header>
 
         <div class="section">
@@ -22,6 +23,7 @@
                     <div class="code-header">Variáveis e Tipos</div>
                     <div class="code-content">
                         <pre><code><span class="comment">// Tipos básicos</span>
+                        
 <span class="type">int</span> numero = <span class="number">10</span>;
 <span class="type">double</span> decimal = <span class="number">10.5</span>;
 <span class="type">string</span> texto = <span class="string">"Olá, mundo!"</span>;
@@ -43,6 +45,7 @@
                     <div class="code-header">Estruturas Condicionais</div>
                     <div class="code-content">
                         <pre><code><span class="comment">// If-else simples</span>
+                        
 <span class="keyword">if</span> (numero > <span class="number">0</span>) {
     Console.WriteLine(<span class="string">"Número positivo"</span>);
 } 
@@ -66,6 +69,7 @@
                     <div class="code-header">Laços de Repetição</div>
                     <div class="code-content">
                         <pre><code><span class="comment">// Loop for</span>
+                        
 <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i < <span class="number">10</span>; i++) {
     Console.WriteLine(i);
 }
@@ -94,6 +98,7 @@
                     <div class="code-header">Arrays e Coleções</div>
                     <div class="code-content">
                         <pre><code><span class="comment">// Arrays</span>
+                        
 <span class="type">int</span>[] numeros = <span class="keyword">new</span> <span class="type">int</span>[<span class="number">5</span>];
 numeros[<span class="number">0</span>] = <span class="number">10</span>;
 
@@ -117,7 +122,8 @@ idades.Add(<span class="string">"João"</span>, <span class="number">25</span>);
                     <div class="code-header">Switch</div>
                     <div class="code-content">
                         <pre><code><span class="comment">// Exemplo de switch</span>
-<span class="keyword">switch</span> (diaDaSemana) {
+                            
+                            <span class="keyword">switch</span> (diaDaSemana) {
     <span class="keyword">case</span> 1:
         Console.WriteLine(<span class="string">"Domingo"</span>);
         <span class="keyword">break</span>;
@@ -137,6 +143,7 @@ idades.Add(<span class="string">"João"</span>, <span class="number">25</span>);
                     <div class="code-header">Do While</div>
                     <div class="code-content">
                         <pre><code><span class="comment">// Exemplo de do-while</span>
+                            
 <span class="type">int</span> contador = 0;
 <span class="keyword">do</span> {
     Console.WriteLine(contador);
@@ -152,6 +159,7 @@ idades.Add(<span class="string">"João"</span>, <span class="number">25</span>);
                     <div class="code-header">Listas e Foreach</div>
                     <div class="code-content">
                         <pre><code><span class="comment">// Exemplo de lista e foreach</span>
+                            
 List&lt;string&gt; frutas = new List&lt;string&gt; { "Maçã", "Banana", "Laranja" };
 <span class="keyword">foreach</span> (<span class="type">string</span> fruta in frutas) {
     Console.WriteLine(fruta);
@@ -166,6 +174,7 @@ List&lt;string&gt; frutas = new List&lt;string&gt; { "Maçã", "Banana", "Laranj
                     <div class="code-header">Tratamento de Exceções com Try-Catch</div>
                     <div class="code-content">
                         <pre><code><span class="comment">// Exemplo de try-catch para manipulação de erros</span>
+                            
 <span class="keyword">try</span> {
     int resultado = 10 / 0; // Gera exceção
 } 
@@ -187,6 +196,7 @@ List&lt;string&gt; frutas = new List&lt;string&gt; { "Maçã", "Banana", "Laranj
                     <div class="code-header">Classes e Objetos</div>
                     <div class="code-content">
                         <pre><code><span class="comment">// Definição de classe</span>
+                            
 <span class="keyword">public class</span> <span class="type">Pessoa</span> {
     <span class="comment">// Propriedades</span>
     <span class="keyword">public</span> <span class="type">string</span> Nome { <span class="keyword">get</span>; <span class="keyword">set</span>; }
@@ -213,6 +223,7 @@ List&lt;string&gt; frutas = new List&lt;string&gt; { "Maçã", "Banana", "Laranj
                     <div class="code-header">Herança</div>
                     <div class="code-content">
                         <pre><code><span class="comment">// Classe base</span>
+                            
 <span class="keyword">public class</span> <span class="type">Animal</span> {
     <span class="keyword">public</span> <span class="type">string</span> Nome { <span class="keyword">get</span>; <span class="keyword">set</span>; }
     
@@ -237,6 +248,7 @@ List&lt;string&gt; frutas = new List&lt;string&gt; { "Maçã", "Banana", "Laranj
                     <div class="code-header">Interfaces</div>
                     <div class="code-content">
                         <pre><code><span class="comment">// Definição de interface</span>
+                            
 <span class="keyword">public interface</span> <span class="type">IVeiculo</span> {
     <span class="type">void</span> Acelerar();
     <span class="type">void</span> Frear();
@@ -267,6 +279,7 @@ List&lt;string&gt; frutas = new List&lt;string&gt; { "Maçã", "Banana", "Laranj
                     <div class="code-header">Métodos de Extensão</div>
                     <div class="code-content">
                         <pre><code><span class="comment">// Classe de extensão</span>
+                           
 <span class="keyword">public static class</span> <span class="type">StringExtensions</span> {
     <span class="comment">// Método de extensão para string</span>
     <span class="keyword">public static</span> <span class="type">bool</span> IsNullOrEmpty(<span class="keyword">this</span> <span class="type">string</span> str) {
@@ -292,6 +305,7 @@ List&lt;string&gt; frutas = new List&lt;string&gt; { "Maçã", "Banana", "Laranj
                     <div class="code-header">Classes e Objetos com Getters e Setters</div>
                     <div class="code-content">
                         <pre><code><span class="comment">// Definição de classe com propriedades e métodos</span>
+                            
 <span class="keyword">public class</span> Pessoa {
     private string _nome;
     
@@ -319,6 +333,7 @@ pessoa.Apresentar(); // Saída: Olá, meu nome é João.</code></pre>
                     <div class="code-header">Métodos com Retorno e Void</div>
                     <div class="code-content">
                         <pre><code><span class="comment">// Método com retorno</span>
+                            
 <span class="type">int</span> Somar(<span class="type">int</span> a, <span class="type">int</span> b) {
     return a + b;
 }
@@ -337,6 +352,7 @@ pessoa.Apresentar(); // Saída: Olá, meu nome é João.</code></pre>
                     <div class="code-header">Enumerações (Enums)</div>
                     <div class="code-content">
                         <pre><code><span class="comment">// Definição de enumeração para dias da semana:</span>
+                            
 public enum DiasSemana {
     Domingo,
     Segunda,
@@ -365,16 +381,17 @@ Console.WriteLine(hoje); // Saída: Domingo.</code></pre>
                     <div class="code-header">Operações Básicas</div>
                     <div class="code-content">
                         <pre><code><span class="comment">// Filtrar (Where)</span>
-<span class="type">var</span> maioresDeIdade = pessoas.Where(p => p.Idade >= <span class="number">18</span>);
+                            
+<span class="var">var</span> maioresDeIdade = pessoas.Where(p => p.Idade >= <span class="number">18</span>);
 
 <span class="comment">// Ordenar (OrderBy)</span>
-<span class="type">var</span> ordenadosPorNome = pessoas.OrderBy(p => p.Nome);
+<span class="var">var</span> ordenadosPorNome = pessoas.OrderBy(p => p.Nome);
 
 <span class="comment">// Selecionar (Select)</span>
-<span class="type">var</span> nomes = pessoas.Select(p => p.Nome);
+<span class="var">var</span> nomes = pessoas.Select(p => p.Nome);
 
 <span class="comment">// Pular e pegar (Skip, Take)</span>
-<span class="type">var</span> paginado = pessoas.Skip(<span class="number">10</span>).Take(<span class="number">5</span>);</code></pre>
+<span class="var">var</span> paginado = pessoas.Skip(<span class="number">10</span>).Take(<span class="number">5</span>);</code></pre>
                     </div>
                     <div class="code-description">
                         LINQ (Language Integrated Query) permite escrever consultas diretamente no código C# para trabalhar com várias fontes de dados.
@@ -385,6 +402,7 @@ Console.WriteLine(hoje); // Saída: Domingo.</code></pre>
                     <div class="code-header">Operações de Agregação</div>
                     <div class="code-content">
                         <pre><code><span class="comment">// Contar (Count)</span>
+                            
 <span class="type">int</span> total = numeros.Count();
 <span class="type">int</span> pares = numeros.Count(n => n % <span class="number">2</span> == <span class="number">0</span>);
 
@@ -397,7 +415,7 @@ Console.WriteLine(hoje); // Saída: Domingo.</code></pre>
 <span class="type">int</span> maiorIdade = pessoas.Max(p => p.Idade);
 
 <span class="comment">// Sintaxe de consulta</span>
-<span class="type">var</span> resultado = <span class="keyword">from</span> p <span class="keyword">in</span> pessoas
+<span class="var">var</span> resultado = <span class="keyword">from</span> p <span class="keyword">in</span> pessoas
                <span class="keyword">where</span> p.Idade > <span class="number">30</span>
                <span class="keyword">orderby</span> p.Nome
                <span class="keyword">select</span> <span class="keyword">new</span> { p.Nome, p.Idade };</code></pre>
@@ -411,6 +429,7 @@ Console.WriteLine(hoje); // Saída: Domingo.</code></pre>
                     <div class="code-header">Coleções Genéricas: List e Dictionary</div>
                     <div class="code-content">
                         <pre><code><span class="comment">// Trabalhando com List:</span>
+                            
 List&lt;int&gt; numeros = new List&lt;int&gt;();
 numeros.Add(10);
 numeros.Add(20);

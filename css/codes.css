@@ -6,7 +6,7 @@
 }
 
 .code-item {
-  background-color: white;
+  background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   overflow: hidden;
@@ -20,7 +20,7 @@
 
 .code-header {
   background-color: #68249c;
-  color: white;
+  color: #fff;
   padding: 12px 15px;
   font-weight: bold;
   font-size: 1.1rem;
@@ -29,15 +29,15 @@
 .code-content {
   padding: 15px;
   overflow-x: auto;
-  background-color: #f8f9fa;
+  background-color: #3c3a3a;
 }
 
 .code-description {
   padding: 15px;
-  background-color: white;
-  color: #555;
+  background-color: #68249c;
+  color: #fff;
   font-size: 0.95rem;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #3c3a3a;
 }
 
 /* Codes Colors */
